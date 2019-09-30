@@ -1,3 +1,34 @@
+Problem : 
+
+Program: Build Elevator system.
+Input: 
+1) No of lifts
+2) No of floor
+3) Passenger (n) travelling to floor, please note I can enter as many as passengers separated with space. Sample input: 1 4 2 6 3 1
+Which means 
+- Passenger 1 travelling to 4th floor
+- passenger 2 travelling to 6th floor
+- Passenger 3 travelling to 1st floor  
+ 
+Assumption: All elevators are set to 0 on initialisation of program and continue to function from last floor number visited within the context of run-time.
+
+Program should handle following scenarios:
+1) Optimise the electricity and performance:  passenger standing on (n)th floor presses all the buttons for (n) lift. Program should identify which lift is in motion and the nearest one should be allocated.
+2) Validations against the input 
+
+Output: should print passenger and the lift allocated to respective passenger. Please note you might have scenario where only one lift caters to sample input (3).
+
+Please create a program to solve the problem. Your solution will be assessed based on :
+
+* Clear and Good object modeling - Clear and logical separation of responsibilities - (emphasis on single responsibility). Components should be named well. Each component should have a clear responsibility. Things not dumped in at one place
+* For the solution, we request that you use Java, Python, JavaScript
+* TDD practices: Unit tests, Integration tests - covering the key behavioral components. Tests should be simple, concise, and maintainable
+* Easy to understand, extendable, not over-engineered code, include Readme
+* Functional completion
+
+-----------------------------------------------------------------------------------------------------------------------------
+Solution :
+
 The requirement of the Elevator Design Question contained a lot of inconsistencies, 
 Therefore I have assumed a number of things to make the program work.
 
