@@ -74,7 +74,7 @@ public class Driver {
 		this.numOfPersons = numOfPersons;
 	}
 	
-	//Runs the simulation of the whole system
+	//Runs the simulation of the whole system in simulate method
 	public void simulate() {
 		
 		 	while(this.persons.size()!=0)
