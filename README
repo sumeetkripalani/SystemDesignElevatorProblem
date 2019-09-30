@@ -1,0 +1,52 @@
+The requirement of the Elevator Design Question contained a lot of inconsistencies, 
+Therefore I have assumed a number of things to make the program work.
+
+Assumptions are as follows :
+
+1. In the input, user has to enter the currentfloor and destination floor of the passenger.
+2. Only one elevator can be asssigned per passenger(person) (If we want multiple passengers per elevator, then we have to define a constant capacity)
+3. Initially all elevators are at ground floor in this case 1
+4. Priority is decided as follows to reduce how many times the elevator moves
+    A. Closest to the elevator 
+    B. Have small difference between current floor and destination floor
+5. Elevator can move only one floor up/down in one count cycle
+5. Cost is the total number of floors the elevators move
+6. It takes one count cycle for a person to board the elevator
+
+
+Structure of Classes and Responsibilities :
+
+There are 4 classes:
+1. Elevator : Handles the responsibility of Current_floor on which the elevator is, the person which is assigned to the elevator     
+2. Person   : Handles the responsibility of a passenger including current floor of passenger, destination floor.
+3. Driver   : This class simulates the whole application.
+4. Main     : This is where main method resides. 
+
+
+*to run the project from commandline, please use the jar and execute 
+java -jar ElevatorProblem.jar *
+
+or you can run Main.java which contains the main method.
+
+******************************Sample Input/Output**************************************
+
+********input**********************
+Enter the number of test cases :
+1
+Enter the num of passengers :
+1
+Enter the number of Elevators :
+1
+Enter the Current floor of 1 passengers seperated by space :
+0
+Enter the Destination floor of 1 passengers seperated by space :
+4
+*********************************************************************
+
+******output**********************************************
+
+Person : Person [person_id=1, current_floor=0, dest_floor=4]
+ is assigned elevator :  1
+Counter : 4
+
+*******************************************************************************************
